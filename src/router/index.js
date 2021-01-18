@@ -5,8 +5,8 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path:"/login",
-    name:"Login",
+    path: "/login",
+    name: "Login",
     component: () => import("@/views/login/index")
   },
   {

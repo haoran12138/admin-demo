@@ -6,13 +6,13 @@
   </div>
 </template>
 <script>
-import {removeToken} from '@/utils/auth'
+import { removeToken } from "@/utils/auth";
 export default {
   name: "Navbar",
   methods: {
     handleOut() {
       // 退出逻辑应该提取出来 复用
-      removeToken() // 清除token
+      removeToken(); // 清除token
       //  清除保存的权限参数（如果有的话）
       this.$router.push({ name: "Login" });
     }
